@@ -1,9 +1,11 @@
 ---
 title: Buttons
-description: A simple and beautiful UI template Buttons.
+description: Buttons in WeedorUI serve as interactive elements that allow users to trigger actions or navigate through your application. They are versatile components designed for various use cases, from submitting forms to performing specific tasks. Each button is customizable in terms of style, size, and behavior, ensuring seamless integration into your interface. .
 ---
 
 import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+Buttons in WeedorUI serve as interactive elements that allow users to trigger actions or navigate through your application. They are versatile components designed for various use cases, from submitting forms to performing specific tasks. Each button is customizable in terms of style, size, and behavior, ensuring seamless integration into your interface.
 
 ### Basic Buttons
 
@@ -58,19 +60,19 @@ import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
   {/* JSX Code here */}
   <TabItem label="JSX">
     ```jsx
-    <button class="py-2 px-6 bg-blue-600 text-base rounded-md cursor-pointer hover:opacity-90">
+    <button className="py-2 px-6 bg-blue-600 text-base rounded-md cursor-pointer hover:opacity-90">
       Default
     </button>
-    <button class="py-2 px-6 bg-[#58c7f4] text-base rounded-md cursor-pointer hover:opacity-90">
+    <button className="py-2 px-6 bg-[#58c7f4] text-base rounded-md cursor-pointer hover:opacity-90">
       Login
     </button>
-    <button class="py-2 px-6 bg-[#e779c0] text-base rounded-md cursor-pointer hover:opacity-90">
+    <button className="py-2 px-6 bg-[#e779c0] text-base rounded-md cursor-pointer hover:opacity-90">
       Download
     </button>
-    <button class="py-2 px-6 bg-[#008081] text-base rounded-md cursor-pointer hover:opacity-90">
+    <button className="py-2 px-6 bg-[#008081] text-base rounded-md cursor-pointer hover:opacity-90">
       Buy Now
     </button>
-    <button class="py-2 px-6 bg-[#ee4740] text-base rounded-md cursor-pointer hover:opacity-90 ">
+    <button className="py-2 px-6 bg-[#ee4740] text-base rounded-md cursor-pointer hover:opacity-90 ">
       Order
     </button>
     ```
@@ -244,7 +246,7 @@ import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
   <TabItem label="Preview">
     <div class="space-y-4 grid ">
       <div class="space-x-4">
-        <button class="py-2 px-6 bg-transparent border border-white hover:bg-white hover:text-black hover:border-transparent text-base rounded-md cursor-pointer">
+        <button class="py-2 px-6 bg-transparent border border-green-500 hover:bg-green-500 hover:text-black hover:border-transparent text-base rounded-md cursor-pointer">
           Default
         </button>
         <button class="py-2 px-6 bg-transparent border border-[#58c7f4] hover:bg-[#58c7f4] hover:border-transparent text-base rounded-md cursor-pointer">
@@ -268,7 +270,7 @@ import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
 
   <TabItem label="HTML">
     ```html
-        <button class="py-2 px-6 bg-transparent border border-white hover:bg-white hover:border-transparent hover:text-black text-base rounded-md cursor-pointer">
+        <button class="py-2 px-6 bg-transparent border border-green-500 hover:bg-green-500 hover:border-transparent hover:text-black text-base rounded-md cursor-pointer">
           Default
         </button>
         <button class="py-2 px-6 bg-transparent border border-[#58c7f4] hover:bg-[#58c7f4] hover:border-transparent text-base rounded-md cursor-pointer">
@@ -291,7 +293,7 @@ import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
 
   <TabItem label="JSX">
     ```jsx
-     <button class="py-2 px-6 bg-transparent border border-white hover:bg-white hover:border-transparent hover:text-black text-base rounded-md cursor-pointer">
+     <button class="py-2 px-6 bg-transparent border border-green-500 hover:bg-green-500 hover:border-transparent hover:text-black text-base rounded-md cursor-pointer">
           Default
         </button>
         <button class="py-2 px-6 bg-transparent border border-[#58c7f4] hover:bg-[#58c7f4] hover:border-transparent text-base rounded-md cursor-pointer">
@@ -304,6 +306,79 @@ import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
           Default
         </button>
         <button class="py-2 px-6 bg-transparent border border-pink-500 hover:bg-pink-500 hover:border-transparent hover:text-white text-base rounded-md cursor-pointer">
+          Default
+        </button>    
+    ```
+  </TabItem>
+</Tabs>
+
+### Rounded Corner Buttons
+
+<Tabs>
+  {/* Basic Button Preview here */}
+  <TabItem label="Preview">
+    <div class="space-y-4 grid ">
+      <div class="space-x-4">
+        <button class="py-2 px-6 bg-transparent border border-green-500 hover:bg-green-500 hover:text-black hover:border-transparent text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#58c7f4] hover:bg-[#58c7f4] hover:border-transparent text-base rounded-full  cursor-pointer">
+          Copy
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#ee4740] hover:bg-[#ee4740] hover:border-transparent text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#154468] hover:bg-[#154468] hover:border-transparent hover:text-white text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-pink-500 hover:bg-pink-500 hover:border-transparent hover:text-white text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+      </div>
+    </div>
+
+  </TabItem>
+{/* ============================================================================================ */}
+{/* HTML Code here */}
+
+  <TabItem label="HTML">
+    ```html
+        <button class="py-2 px-6 bg-transparent border border-green-500 hover:bg-green-500 hover:border-transparent hover:text-black text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#58c7f4] hover:bg-[#58c7f4] hover:border-transparent text-base rounded-full  cursor-pointer">
+          Copy
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#ee4740] hover:bg-[#ee4740] hover:border-transparent text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#154468] hover:bg-[#154468] hover:border-transparent hover:text-white text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-pink-500 hover:bg-pink-500 hover:border-transparent hover:text-white text-base rounded-full  cursor-pointer">
+          Default
+        </button>    
+    ```
+
+  </TabItem>
+{/* ============================================================================================ */}
+{/* JSX Code here */}
+
+  <TabItem label="JSX">
+    ```jsx
+     <button class="py-2 px-6 bg-transparent border border-green-500 hover:bg-green-500 hover:border-transparent hover:text-black text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#58c7f4] hover:bg-[#58c7f4] hover:border-transparent text-base rounded-full  cursor-pointer">
+          Copy
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#ee4740] hover:bg-[#ee4740] hover:border-transparent text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-[#154468] hover:bg-[#154468] hover:border-transparent hover:text-white text-base rounded-full  cursor-pointer">
+          Default
+        </button>
+        <button class="py-2 px-6 bg-transparent border border-pink-500 hover:bg-pink-500 hover:border-transparent hover:text-white text-base rounded-full  cursor-pointer">
           Default
         </button>    
     ```

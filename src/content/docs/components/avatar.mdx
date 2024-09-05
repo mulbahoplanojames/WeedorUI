@@ -1,0 +1,170 @@
+---
+title: Avatar
+description: Avatars in WeedorUI are visual components used to represent users or entities in your application. Typically displayed as images, icons, or initials, avatars help identify individuals in user profiles, comment sections, and lists. These components are fully customizable, allowing you to adjust their size, shape, and appearance to match your design needs.
+---
+
+import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+Avatars in WeedorUI are visual components used to represent users or entities in your application. Typically displayed as images, icons, or initials, avatars help identify individuals in user profiles, comment sections, and lists. These components are fully customizable, allowing you to adjust their size, shape, and appearance to match your design needs.
+
+### Avatar
+
+{/* ============================================================================================ */}
+{/* Basic Avatar Code Below */}
+
+<Tabs>
+  {/* Basic Avatar Preview here */}
+  <TabItem label="Preview">
+    <div class="space-y-10 grid place-items-center ">
+      <div class="space-x-4 w-32 h-32 bg-red-200 overflow-hidden rounded-md">
+        <img
+          src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Avatar"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </TabItem>
+  {/* ============================================================================================ */}
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <div class="space-x-4 w-32 h-32 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    ```
+  </TabItem>
+  {/* ============================================================================================ */}
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <div className="space-x-4 w-32 h-32 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    ```
+  </TabItem>
+</Tabs>
+
+{/* =========================================================================== */}
+
+### Avatar In Custon Sizes
+
+<Tabs>
+  {/* Basic Avatar Preview here */}
+  <TabItem label="Preview">
+    <div class="space-y-10 flex items-center justify-center space-x-6 ">
+      <div class="space-x-4 w-28 h-28 bg-red-200 overflow-hidden rounded-md">
+        <img
+          src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Avatar"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="space-x-4 w-24 h-24 bg-red-200 overflow-hidden rounded-md">
+        <img
+          src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Avatar"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="space-x-4 w-16 h-16 bg-red-200 overflow-hidden rounded-md">
+        <img
+          src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Avatar"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div class="space-x-4 w-12 h-12 bg-red-200 overflow-hidden rounded-md">
+        <img
+          src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Avatar"
+          class="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+  </TabItem>
+  {/* ============================================================================================ */}
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <div class="space-x-4 w-28 h-28 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="space-x-4 w-24 h-24 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="space-x-4 w-16 h-16 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+    <div class="space-x-4 w-12 h-12 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        class="w-full h-full object-cover"
+      />
+    </div>
+    ```
+
+  </TabItem>
+  {/* ============================================================================================ */}
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <div className="space-x-4 w-28 h-28 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div className="space-x-4 w-24 h-24 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div className="space-x-4 w-16 h-16 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+    <div className="space-x-4 w-12 h-12 bg-red-200 overflow-hidden rounded-md">
+      <img
+        src="https://images.pexels.com/photos/2625122/pexels-photo-2625122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Avatar"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    ```
+
+  </TabItem>
+</Tabs>
