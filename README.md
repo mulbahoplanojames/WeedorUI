@@ -20,10 +20,6 @@ Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. 
 
 Images can be added to `src/assets/` and embedded in Markdown with a relative link.
 
-Static assets, like favicons, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
