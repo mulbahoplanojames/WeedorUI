@@ -16,9 +16,6 @@
 └── tsconfig.json
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
-
-
 All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
