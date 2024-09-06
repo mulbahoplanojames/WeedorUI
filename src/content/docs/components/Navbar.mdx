@@ -1,0 +1,29 @@
+---
+title: Navbar
+description: Buttons in WeedorUI serve as interactive elements that allow users to trigger actions or navigate through your application. They are versatile components designed for various use cases, from submitting forms to performing specific tasks. Each button is customizable in terms of style, size, and behavior, ensuring seamless integration into your interface. .
+---
+
+import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+Navbars in WeedorUI act as essential navigation components that help users move through your application efficiently. They are versatile and can be used to organize links, menus, and branding elements. Each navbar is customizable in terms of layout, style, and behavior, ensuring seamless integration into your design. Whether it's a simple top bar or a fully functional multi-level menu, WeedorUI navbars provide both functionality and visual adaptability for any project.
+
+### Basic Navbar
+
+<Tabs>
+  <TabItem label="Preview">
+      <nav class="flex justify-between items-center md:px-10 px-3 py-4 bg-white w-full">
+          <h1 class="text-xl">Logo</h1>
+
+        {/*<!-- links  -->*/}
+        <menu class="hidden md:flex gap-4">
+          <a href="#" class="inline-block px-6 hover:bg-slate-200 py-2 hover:cursor-pointer rounded-md transition-all duration-300">Admission</a>
+          <a href="#" class="inline-block px-6 hover:bg-slate-200 py-2 hover:cursor-pointer rounded-md transition-all duration-300">Academic </a>
+          <a href="#" class="inline-block px-6 hover:bg-slate-200 py-2 hover:cursor-pointer rounded-md transition-all duration-300">Teachers</a>
+          <a href="#" class="inline-block px-6 hover:bg-slate-200 py-2 hover:cursor-pointer rounded-md transition-all duration-300">Service</a>
+        </menu>
+      </nav>
+
+</TabItem>
+  <TabItem label="HTML"></TabItem>
+  <TabItem label="JSX"></TabItem>
+</Tabs>

@@ -24,9 +24,6 @@ hero:
     - text: Giudes and Components
       link: getting_started/example/
       icon: right-arrow
-    - text: Documentation
-      link: docs/
-      icon: github
 ---
 
 import { Card, CardGrid, Tabs, TabItem } from "@astrojs/starlight/components";
@@ -65,8 +62,10 @@ import { Card, CardGrid, Tabs, TabItem } from "@astrojs/starlight/components";
 
 <CardGrid stagger>
   <Card title="Free and Open Source" icon="github">
-    WeedorUI is completely free and open source, giving developers the freedom
-    to use, modify, and contribute to the template library without limitations.
+    WeedorUI is completely [free and open
+    source](https://github.com/mulbahoplanojames/WeedorUI), giving developers
+    the freedom to use, modify, and contribute to the template library without
+    limitations.
   </Card>
   <Card title="Responsive and customizable with Tailwind CSS" icon="external">
     WeedorUI is fully responsive and easily customizable, leveraging the power
@@ -82,3 +81,12 @@ import { Card, CardGrid, Tabs, TabItem } from "@astrojs/starlight/components";
     quick and seamless integration
   </Card>
 </CardGrid>
+
+<div class="pt-16 text-center">
+  <p class="text-2xl">
+    {new Date().getFullYear()} &copy; WeedorUI. All rights reserved.
+  </p>
+  <p class="text-2xl">
+    Build and Manage with <span> ❤️ </span> by Oplano James Mulbah
+  </p>
+</div>
