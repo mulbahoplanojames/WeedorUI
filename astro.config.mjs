@@ -6,6 +6,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [
     starlight({
+      favicon: "/favicon.png",
       title: "WeedorUI",
       social: {
         github: "https://github.com/mulbahoplanojames",
@@ -27,4 +28,7 @@ export default defineConfig({
     }),
     tailwind({ applyBaseStyles: false }),
   ],
+  devOptions: {
+    devToolbar: false, // Disable the dev toolbar to fix the error
+  },
 });

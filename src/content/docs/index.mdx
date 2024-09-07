@@ -27,10 +27,11 @@ hero:
 ---
 
 import { Card, CardGrid, Tabs, TabItem } from "@astrojs/starlight/components";
+import weedor_spider from "../../assets/weedor_spider.webp";
 
 <section class="grid grid-cols-1 md:grid-cols-2 gap-10 py-10">
    <div class="h-full overflow-hidden md:order-first order-last">
-    <img src="src/assets/weedor_spider.webp" alt="Don't re-invent the wheel image" class="w-full h-full object-cover" />
+    <img src={weedor_spider} alt="Don't re-invent the wheel image" class="w-full h-full object-cover" />
  </div>
 
   <div class="space-y-4">
