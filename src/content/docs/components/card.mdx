@@ -1,0 +1,75 @@
+---
+title: Card
+description: Cards in WeedorUI are versatile components designed to group related content and provide a structured way to display information. They can be used for a variety of purposes, such as showcasing products, displaying user profiles, or organizing key details. Each card is fully customizable in terms of layout, style, and content, ensuring seamless integration into your application's design.
+---
+
+import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+Cards in WeedorUI are versatile components designed to group related content and provide a structured way to display information. They can be used for a variety of purposes, such as showcasing products, displaying user profiles, or organizing key details. Each card is fully customizable in terms of layout, style, and content, ensuring seamless integration into your application's design.
+
+### Card
+
+<Tabs style="overflow-x: scroll">
+  <TabItem label="Preview">
+    <section class="grid place-items-center py-6">
+      <div class="w-[360px] h-fit bg-grn-400 overflow-hidden rounded-md shadow-xl bg-slate-50 dark:bg-[#1c232b]">
+        <img
+          src="https://i.pinimg.com/236x/97/52/48/975248ae71a82109eae2387d8ab3dc7c.jpg"
+          alt="Kid toy Image"
+          class="w-full h-[200px] object-cover"
+        />
+        <div class="py-5 px-4">
+          <span class="text-3xl font-bold pb-4 inline-block">Toys!</span>
+          <span class="text-base pb-5 inline-block">
+            Make your child happy with this beautiful and fun toy set.
+          </span>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:shadow-xl">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </section>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <div class="w-[360px] h-fit bg-grn-400 overflow-hidden rounded-md shadow-2xl">
+      <img
+        src="https://i.pinimg.com/236x/97/52/48/975248ae71a82109eae2387d8ab3dc7c.jpg"
+        alt="kid toy image"
+        class="w-full h-[200px] object-cover"
+      />
+      <div class="py-6 px-4">
+        <h1 class="text-2xl font-bold pb-3">Toys!</h1>
+        <p class="text-base pb-4">
+          Make your child happy with this beautiful and fun toy set.
+        </p>
+        <button class="bg-blue-500 text-white px-4 py-2 rounded-md hover:shadow-xl">
+          Buy Now
+        </button>
+      </div>
+    </div>
+    ```
+    {/* JSX Code here */}
+  </TabItem>
+  <TabItem label="JSX">
+    ```jsx
+    <div className="w-[360px] h-fit bg-grn-400 overflow-hidden rounded-md shadow-2xl">
+      <img
+        src="https://i.pinimg.com/236x/97/52/48/975248ae71a82109eae2387d8ab3dc7c.jpg"
+        alt="Kid toy image"
+        className="w-full h-[200px] object-cover"
+      />
+      <div className="py-6 px-4">
+        <h1 className="text-2xl font-bold pb-3">Toys!</h1>
+        <p className="text-base pb-4">
+          Make your child happy with this beautiful and fun toy set.
+        </p>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-md hover:shadow-xl">
+          Buy Now
+        </button>
+      </div>
+    </div>
+    ```
+  </TabItem>
+</Tabs>
