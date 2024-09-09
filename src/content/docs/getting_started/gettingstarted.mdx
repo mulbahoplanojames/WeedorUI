@@ -113,5 +113,76 @@ Before integrating WeedorUI, please follow the guide below to install or update 
     You now have Tailwind CSS running through the Play CDN. This method is a quick and easy way to integrate Tailwind for small-scale projects or rapid prototyping. For more information visit the [official Tailwind documentation](https://tailwindcss.com/docs).
 
 </TabItem>
-  <TabItem label="NPM"></TabItem>
+  <TabItem label="Framework Guide">
+    <Tabs>
+        <TabItem label="React Js">
+           ###### Step 1: Create Your React Project
+
+            If you haven't already created a React project, you can use Create React App to set one up quickly. Run the following command in your terminal:
+
+            ```sh
+                npx create-react-app my-project
+                cd my-project
+            ```
+
+            ###### Step 2: Install Tailwind CSS
+
+            Once your React project is set up, install Tailwind CSS along with its peer dependencies using npm:
+
+            ```sh
+            npm install -D tailwindcss postcss autoprefixer
+            npx tailwindcss init -p
+            ```
+
+            This will generate a tailwind.config.js file and a postcss.config.js file, which you can configure later if needed.
+
+            ###### Step 3: Configure the tailwind.config.js File
+
+            Inside the tailwind.config.js file, specify the paths to all of your components where Tailwind classes will be used:
+
+            ```sh
+                module.exports = {
+                  content: [
+                    './src/**/*.{js,jsx,ts,tsx}',
+                  ],
+                  theme: {
+                    extend: {},
+                  },
+                  plugins: [],
+                }
+            ```
+
+            ###### Step 4: Add Tailwind Directives to Your CSS
+
+            Create a new CSS file (e.g., src/index.css) and include the Tailwind CSS directives:
+
+            ```css
+                @tailwind base;
+                @tailwind components;
+                @tailwind utilities;
+            ```
+
+            Then, import this file in your src/index.js or src/index.tsx file:
+
+            ```js
+                import './index.css';
+            ```
+
+            ###### Step 5: Start Your Development Server
+
+            You can now run the development server to start using Tailwind CSS in your React project:
+
+            ```sh
+                npm run start
+            ```
+
+            Tailwind CSS will now be applied to your React components, allowing you to use utility classes throughout your project.
+
+
+            You’ve successfully integrated Tailwind CSS into your React project. By following this guide, you can take full advantage of Tailwind’s utility-first approach in your React applications. For more detailed information, visit the [official Tailwind documentation](https://tailwindcss.com/docs).
+        </TabItem>
+        <TabItem label="Angular"></TabItem>
+    </Tabs>
+
+</TabItem>
 </Tabs>
