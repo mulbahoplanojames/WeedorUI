@@ -1,3 +1,18 @@
+# WeedorUI
+
+WeedorUI offers a collection of beautifully crafted components, ready to be seamlessly integrated into your applications with a simple copy-and-paste. Each component is not only visually appealing but also fully accessible, ensuring inclusivity for all users. Designed with flexibility in mind, they are highly customizable to fit your unique design requirements. WeedorUI is open-source, and it empowers developers with complete creative control.
+
+## Features
+
+- Responsive Design: WeedorUI ensures compatibility across devices of various screen sizes.
+- Pre-built Components: A wide range of UI components that can be easily integrated into projects.
+- Customization Options: Developers can customize components to suit their needs.
+- Cross-browser Compatibility: Works smoothly across modern browsers.
+
+## Demo
+  You can check out the live demo of the application [here](https://weedorui.vercel.app/).
+
+
 ## 🚀 Project Structure
 
 
