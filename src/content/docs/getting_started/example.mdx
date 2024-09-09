@@ -1,0 +1,98 @@
+---
+title: Getting Started With WeedorUI
+description: A guide in my new Starlight docs site.
+---
+
+import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+WeedorUI offers a collection of beautifully crafted components, ready to be seamlessly integrated into your applications with a simple copy-and-paste. Each component is not only visually appealing but also fully accessible, ensuring inclusivity for all users. Designed with flexibility in mind, they are highly customizable to fit your unique design requirements. WeedorUI is open-source, and it empowers developers with complete creative control.
+
+### Installation
+
+WeedorUI is built on top of Tailwind CSS, a highly customizable, low-level CSS framework. To ensure compatibility and take full advantage of WeedorUI's features, it is important to have the latest version of Tailwind CSS installed in your project.
+
+Before integrating WeedorUI, please follow the guide below to install or update to the most recent version of Tailwind CSS. This will help ensure that your project runs smoothly and you benefit from all the modern utilities and configurations provided by Tailwind.
+
+<Aside type="note" title="Watch out!">
+  Please note that all of the instalation guide was taken from the [Tailwind CSS
+  documentation](https://tailwindcss.com/docs/installation).
+</Aside>
+
+<br />
+
+<Tabs>
+  <TabItem label="Tailwind CLI">
+    ###### Step 1: Install Tailwind CSS via npm
+
+    First, you’ll need to install `tailwindcss` using npm. Open your terminal and run the following command:
+
+    ```sh
+        npm install -D tailwindcss
+        npx tailwindcss init
+    ```
+    The tailwindcss init command creates a default tailwind.config.js file at the root of your project. You can customize this configuration file as needed.
+
+    ###### Step 2: Configure Your Template Paths
+
+    In your tailwind.config.js file, add the paths to all of your template files. This ensures that Tailwind can remove any unused styles when building for production.
+
+    ```sh
+        module.exports = {
+          content: [
+            './src/**/*.{html,js}',
+          ],
+          theme: {
+            extend: {},
+          },
+          plugins: [],
+        }
+    ```
+
+###### Step 3: Add Tailwind to Your CSS
+
+    Create a CSS file where you want to include Tailwind's base, components, and utilities:
+
+    ```sh
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+    ```
+
+###### Step 4: Start the Tailwind CLI Build Process
+
+    Now, run the Tailwind CLI tool to scan your template files and generate the necessary CSS:
+
+    ```sh
+        npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+    ```
+    This command watches your template files and rebuilds the CSS every time you save changes.
+
+    That's it! You have successfully installed Tailwind CSS via the CLI. For more details, you can always refer to the [official Tailwind documentation](https://tailwindcss.com/docs).
+
+  </TabItem>
+  <TabItem label="Play CDN">
+            
+###### Step 1: Include the Play CDN in Your HTML
+    
+    To start using Tailwind CSS in your project without any additional build tools, simply include the following `<script>` tag inside the `<head>` of your HTML file:
+    
+    ```html
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Tailwind Project</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+      </head>
+      <body>
+        <h1 class="text-3xl font-bold underline">Hello, world!</h1>
+      </body>
+    </html>
+    ```
+    
+    This will load the latest version of Tailwind CSS via the CDN.
+
+</TabItem>
+  <TabItem label="NPM"></TabItem>
+</Tabs>
