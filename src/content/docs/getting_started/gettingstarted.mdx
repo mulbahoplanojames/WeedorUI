@@ -90,8 +90,27 @@ Before integrating WeedorUI, please follow the guide below to install or update 
       </body>
     </html>
     ```
-    
     This will load the latest version of Tailwind CSS via the CDN.
+
+###### Step 2: Enable JIT Mode and Add Custom Configuration (Optional)
+
+    You can also configure Tailwind directly in your HTML by passing a custom configuration object to the tailwind.config method, allowing you to enable JIT (Just-in-Time) mode or customize the design tokens.
+
+    ```javascript
+        <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  primary: '#1da1f2',
+                },
+              },
+            },
+          }
+        </script>
+    ```
+
+    You now have Tailwind CSS running through the Play CDN. This method is a quick and easy way to integrate Tailwind for small-scale projects or rapid prototyping. For more information visit the [official Tailwind documentation](https://tailwindcss.com/docs).
 
 </TabItem>
   <TabItem label="NPM"></TabItem>
