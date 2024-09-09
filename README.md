@@ -12,6 +12,13 @@ WeedorUI offers a collection of beautifully crafted components, ready to be seam
 ## Demo
   You can check out the live demo of the application [here](https://weedorui.vercel.app/).
 
+## Technologies Used:
+
+- React.js: A popular JavaScript library for building user interfaces.
+- HTML: The fundamental building block of web pages, providing the structure and content.
+- Tailwind CSS: A utility-first CSS framework that offers a wide range of customizable styles.
+- MDX: A syntax extension for Markdown that allows for the inclusion of JavaScript code within Markdown documents, making it ideal for creating dynamic content.
+
 
 ## 🚀 Project Structure
 
@@ -41,3 +48,25 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+
+## Contributing
+We welcome contributions! To contribute:
+
+- Fork the repository.
+- Create a new branch:
+```
+git checkout -b feature-branch-name
+```
+
+- Make your changes and commit them:
+```
+git commit -m 'Add new feature'
+```
+
+- Push to the branch:
+```
+git push origin feature-branch-name
+```
+
+- Create a pull request, and we will review it as soon as possible.
