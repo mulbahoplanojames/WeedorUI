@@ -2,6 +2,339 @@
     title: Select
     description: Select components in WeedorUI provide an intuitive way for users to choose from a list of options in forms or settings. These dropdown elements are versatile and ideal for situations where multiple choices are available, but only one selection is needed. Each Select component is fully customizable in terms of style, behavior, and layout, ensuring smooth integration into your interface. 
     slug: Form/select
+    sidebar:
+      order: 6
 ---
 
+import { Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
 Select components in WeedorUI provide an intuitive way for users to choose from a list of options in forms or settings. These dropdown elements are versatile and ideal for situations where multiple choices are available, but only one selection is needed. Each Select component is fully customizable in terms of style, behavior, and layout, ensuring smooth integration into your interface.
+
+### select
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      <select
+        name="country"
+        id="country"
+        class="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your country
+        </option>
+        <option value="Liberia">Liberia</option>
+        <option value="usa">USA</option>
+        <option value="uk">Rwanda</option>
+        <option value="australia">South Sudan</option>
+      </select>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <select
+      name="country"
+      id="country"
+      class="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+    >
+      <option value="" hidden>
+        Select your country
+      </option>
+      <option value="Liberia">Liberia</option>
+      <option value="usa">USA</option>
+      <option value="uk">Rwanda</option>
+      <option value="South Sudan">South Sudan</option>
+    </select>
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <select
+      name="country"
+      id="country"
+      className="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+    >
+      <option value="" hidden>
+        Select your country
+      </option>
+      <option value="Liberia">Liberia</option>
+      <option value="usa">USA</option>
+      <option value="uk">Rwanda</option>
+      <option value="South Sudan">South Sudan</option>
+    </select>
+    ```
+  </TabItem>
+</Tabs>
+
+### select with Label
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      <label for="framework" class="text-base pb-2 block">
+        <span class="block pb-1">Select your framework</span>
+        <select
+          name="framework"
+          id="framework"
+          class="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+        >
+          <option value="" hidden>
+            Best JS framework
+          </option>
+          <option value="React">React</option>
+          <option value="Angular">Angular</option>
+          <option value="Vue">Vue</option>
+        </select>
+      </label>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <label for="framework" class="text-base pb-2 block">
+      <span class="block pb-1">Select your framework</span>
+      <select
+        name="framework"
+        id="framework"
+        class="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Best JS framework
+        </option>
+        <option value="React">React</option>
+        <option value="Angular">Angular</option>
+        <option value="Vue">Vue</option>
+      </select>
+    </label>
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <label for="framework" className="text-base pb-2 block">
+      <span className="block pb-1">Select your framework</span>
+      <select
+        name="framework"
+        id="framework"
+        className="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Best JS framework
+        </option>
+        <option value="React">React</option>
+        <option value="Angular">Angular</option>
+        <option value="Vue">Vue</option>
+      </select>
+    </label>
+    ```
+  </TabItem>
+</Tabs>
+
+### select with disabled option
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      <label for="framework" class="text-base pb-2 block">
+        <span class="block pb-1">Select your framework</span>
+        <select
+          name="framework"
+          id="framework"
+          class="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+          disabled
+        >
+          <option value="" hidden>
+            Best JS framework
+          </option>
+          <option value="React">React</option>
+          <option value="Angular">Angular</option>
+          <option value="Vue">Vue</option>
+        </select>
+      </label>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <label for="framework" class="text-base pb-2 block">
+      <span class="block pb-1">Select your framework</span>
+      <select
+        name="framework"
+        id="framework"
+        class="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+        disabled
+      >
+        <option value="" hidden>
+          Best JS framework
+        </option>
+        <option value="React">React</option>
+        <option value="Angular">Angular</option>
+        <option value="Vue">Vue</option>
+      </select>
+    </label>
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <label for="framework" className="text-base pb-2 block">
+      <span className="block pb-1">Select your framework</span>
+      <select
+        name="framework"
+        id="framework"
+        className="w-80 h-12 border border-slate-300 outline-none px-4 py-2 rounded-md"
+        disabled
+      >
+        <option value="" hidden>
+          Best JS framework
+        </option>
+        <option value="React">React</option>
+        <option value="Angular">Angular</option>
+        <option value="Vue">Vue</option>
+      </select>
+    </label>
+    ```
+  </TabItem>
+</Tabs>
+
+### select with different sizes
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      <select
+        name="course"
+        id="course"
+        class="w-80 h-10 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+    <select
+        name="course"
+        id="course"
+        class="w-80 h-12 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+      <select
+        name="course"
+        id="course"
+        class="w-80 h-16 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+            <option value="" hidden>
+             Select your course
+            </option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select>
+
+    </div>
+
+  </TabItem>
+  <TabItem label="HTML">
+    ```html
+    {/* sm */}
+    <select
+        name="course"
+        id="course"
+        class="w-80 h-10 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+
+    {/* md */}
+    <select
+        name="course"
+        id="course"
+        class="w-80 h-12 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+
+    {/* lg */}
+    <select
+        name="course"
+        id="course"
+        class="w-80 h-16 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+    ```
+
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    {/* sm */}
+    <select
+        name="course"
+        id="course"
+        className="w-80 h-10 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+
+    {/* md */}
+    <select
+        name="course"
+        id="course"
+        className="w-80 h-12 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+
+    {/* lg */}
+    <select
+        name="course"
+        id="course"
+        className="w-80 h-16 border border-blue-500 outline-none px-4 py-2 rounded-md"
+      >
+        <option value="" hidden>
+          Select your course
+        </option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+      ```
+
+  </TabItem>
+</Tabs>
