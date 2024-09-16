@@ -2,6 +2,353 @@
 title: Checkbox
 description: Checkboxes in WeedorUI are crucial interactive elements for capturing user selections and preferences. They are versatile components that can be used for forms, settings, and various user interactions. Each checkbox is highly customizable in terms of style, size, and behavior, ensuring smooth integration into your application's design.
 slug: Form/checkbox
+sidebar:
+  order: 8
 ---
 
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+
 Checkboxes in WeedorUI are crucial interactive elements for capturing user selections and preferences. They are versatile components that can be used for forms, settings, and various user interactions. Each checkbox is highly customizable in terms of style, size, and behavior, ensuring smooth integration into your application's design.
+
+### checkbox
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+      />
+    </div>
+  </TabItem>
+  <TabItem label="HTML">
+    ```html
+    <input
+      type="checkbox"
+      id="checkbox"
+      checked
+      class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+    />
+    ```
+  </TabItem>
+  <TabItem label="JSX">
+    ```jsx
+    <input
+      type="checkbox"
+      id="checkbox"
+      checked
+      className="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+    />
+    ```
+  </TabItem>
+</Tabs>
+
+### checkbox with label control
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      <label for="checkbox1" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox1"
+          checked
+          class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+      </label>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <label for="checkbox1" class="inline-flex gap-20 text-lg items-end">
+      I agree
+      <input
+        type="checkbox"
+        id="checkbox1"
+        checked
+        class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+      />
+    </label>
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <label for="checkbox1" class="inline-flex gap-20 text-lg items-end">
+      I agree
+      <input
+        type="checkbox"
+        id="checkbox1"
+        checked
+        class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+      />
+    </label>
+    ```
+  </TabItem>
+</Tabs>
+
+### checkbox with Colors
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center py-10 px-5">
+      {/* Blue */}
+      <label for="checkbox2" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox2"
+          checked
+          class="w-8 h-8 appearance-none border border-blue-300 rounded-md checked:bg-blue-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+      </label>
+      {/* Red */}
+      <label for="checkbox4" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox4"
+          checked
+          class="w-8 h-8 appearance-none border border-red-300 rounded-md checked:bg-red-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-red-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+      </label>
+      {/* Green */}
+      <label for="checkbox3" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox3"
+          checked
+          class="w-8 h-8 appearance-none border border-green-300 rounded-md checked:bg-green-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-green-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+      </label>
+      {/* Yellow */}
+      <label for="checkbox5" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox5"
+          checked
+          class="w-8 h-8 appearance-none border border-yellow-300 rounded-md checked:bg-yellow-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+      </label>
+      {/* Purple */}
+      <label for="checkbox2" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox2"
+          checked
+          class="w-8 h-8 appearance-none border border-purple-300 rounded-md checked:bg-purple-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+      </label>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    {/* Blue */}
+    <label for="checkbox2" class="inline-flex gap-20 text-lg items-end">
+      I agree
+      <input
+        type="checkbox"
+        id="checkbox2"
+        checked
+        class="w-8 h-8 appearance-none border border-blue-300 rounded-md checked:bg-blue-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+      />
+    </label>
+
+        {/* Red */}
+    <label for="checkbox4" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox4"
+          checked
+          class="w-8 h-8 appearance-none border border-red-300 rounded-md checked:bg-red-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-red-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+
+      {/* Green */}
+    <label for="checkbox3" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox3"
+          checked
+          class="w-8 h-8 appearance-none border border-green-300 rounded-md checked:bg-green-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-green-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+
+      {/* Yellow */}
+    <label for="checkbox5" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox5"
+          checked
+          class="w-8 h-8 appearance-none border border-yellow-300 rounded-md checked:bg-yellow-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+
+      {/* Purple */}
+    <label for="checkbox2" class="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox2"
+          checked
+          class="w-8 h-8 appearance-none border border-purple-300 rounded-md checked:bg-purple-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+    ```
+
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    {/* Blue */}
+    <label for="checkbox2" className="inline-flex gap-20 text-lg items-end">
+      I agree
+      <input
+        type="checkbox"
+        id="checkbox2"
+        checked
+        className="w-8 h-8 appearance-none border border-blue-300 rounded-md checked:bg-blue-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-blue-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+      />
+    </label>
+
+    {/* Red */}
+    <label for="checkbox4" className="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox4"
+          checked
+          className="w-8 h-8 appearance-none border border-red-300 rounded-md checked:bg-red-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-red-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+
+      {/* Green */}
+    <label for="checkbox3" className="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox3"
+          checked
+          className="w-8 h-8 appearance-none border border-green-300 rounded-md checked:bg-green-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-green-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+
+      {/* Yellow */}
+    <label for="checkbox5" className="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox5"
+          checked
+          className="w-8 h-8 appearance-none border border-yellow-300 rounded-md checked:bg-yellow-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-yellow-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+
+      {/* Purple */}
+    <label for="checkbox2" className="inline-flex gap-20 text-lg items-end">
+        I agree
+        <input
+          type="checkbox"
+          id="checkbox2"
+          checked
+          className="w-8 h-8 appearance-none border border-purple-300 rounded-md checked:bg-purple-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </label>
+    ```
+
+  </TabItem>
+</Tabs>
+
+### checkbox with sizes
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center gap-4 py-10 px-5">
+        {/* sm */}
+      <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-6 h-6 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+        {/* md */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+        {/* lg */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-10 h-10 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    </div>
+
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+            {/* sm */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-6 h-6 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+        {/* md */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+        {/* lg */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        class="w-10 h-10 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+        {/* sm */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        className="w-6 h-6 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+        {/* md */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        className="w-8 h-8 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+        {/* lg */}
+    <input
+        type="checkbox"
+        id="checkbox"
+        checked
+        className="w-10 h-10 appearance-none border border-gray-300 rounded-md checked:bg-slate-400 checked:border-transparent focus:outline-none focus:ring-2 focus:ring-slate-400 relative before:absolute before:top-0 before:left-0 before:w-full before:h-full before:flex before:items-center before:justify-center before:text-transparent checked:before:content-['✔'] checked:before:text-white before:text-white checked:before:p-2 before:transition before:duration-300"
+        />
+    ```
+  </TabItem>
+</Tabs>
