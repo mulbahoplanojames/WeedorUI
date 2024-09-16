@@ -2,6 +2,8 @@
     title: Textarea
     description: Textarea components in WeedorUI are designed to capture larger blocks of user input, making them ideal for comments, feedback, or longer text entries. They offer ample space for users to input detailed information and are highly customizable in terms of size, style, and behavior.
     slug: Form/textarea
+    sidebar:
+      order: 6
 
 ---
 
@@ -12,7 +14,308 @@ Textarea components in WeedorUI are designed to capture larger blocks of user in
 ### textarea
 
 <Tabs>
-  <TabItem label="Preview"></TabItem>
-  <TabItem label="HTML"></TabItem>
-  <TabItem label="JSX"></TabItem>
+  <TabItem label="Preview">
+    <div class="grid place-items-center gap-y-3 py-8">
+      <textarea
+        name=""
+        id=""
+        placeholder="Type here"
+        class="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "
+      ></textarea>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <textarea
+      name=""
+      id=""
+      placeholder="Type here"
+      class="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "
+    ></textarea>
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <textarea
+      name=""
+      id=""
+      placeholder="Type here"
+      className="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "
+    ></textarea>
+    ```
+
+  </TabItem>
+</Tabs>
+
+### textarea with label
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center gap-y-3 py-8">
+      <label for="">
+        <span class="block pb-1">Comment</span>
+        <textarea
+          name=""
+          id=""
+          placeholder="Type Comment here"
+          class="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "
+        ></textarea>
+      </label>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    <label for="">
+      <span class="block pb-1">Comment</span>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "
+      ></textarea>
+    </label>
+    ```
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    <label for="">
+      <span className="block pb-1">Comment</span>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "
+      ></textarea>
+    </label>
+    ```
+  </TabItem>
+</Tabs>
+
+### textarea with Colors
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center gap-y-3 py-8">
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-14 border border-blue-500 focus:ring-2 ring-blue-500 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-14 border border-red-500 focus:ring-2 ring-red-500 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-14 border border-green-500 focus:ring-2 ring-green-500 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-14 border border-yellow-500 focus:ring-2 ring-yellow-500 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-14 border border-pink-500 focus:ring-2 ring-pink-500 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        class="w-80 h-14 border border-purple-500 focus:ring-2 ring-purple-500 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+    </div>
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+    {/* Blue */}
+    <textarea
+      name=""
+      id=""
+      placeholder="Type Comment here"
+      class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+    ></textarea>
+
+    {/* Yellow */}
+    <textarea
+      name=""
+      id=""
+      placeholder="Type Comment here"
+      class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+    ></textarea>
+
+    {/* Green */}
+    <textarea
+      name=""
+      id=""
+      placeholder="Type Comment here"
+      class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+    ></textarea>
+
+    {/* Red */}
+    <textarea
+      name=""
+      id=""
+      placeholder="Type Comment here"
+      class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+    ></textarea>
+
+    {/* Pink */}
+    <textarea
+      name=""
+      id=""
+      placeholder="Type Comment here"
+      class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+    ></textarea>
+
+    {/* Purple */}
+    <textarea
+      name=""
+      id=""
+      placeholder="Type Comment here"
+      class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+    ></textarea>
+    ```
+
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+      {{!-- Blue --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+
+      {{!-- Yellow --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+
+      {{!-- Green --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+
+      {{!-- Red --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+
+      {{!-- Pink --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+
+      {{!-- Purple --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type Comment here"
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"
+      ></textarea>
+    ```
+
+  </TabItem>
+</Tabs>
+
+### textarea with different sizes
+
+<Tabs>
+  <TabItem label="Preview">
+    <div class="grid place-items-center gap-y-3 py-8">
+
+      <textarea name="" id="" placeholder="Type here" class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md "></textarea>
+
+      <textarea name="" id="" placeholder="Type here" class="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 rounded-md" ></textarea>
+
+      <textarea name="" id="" placeholder="Type here" class="w-80 h-24 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md"></textarea>
+    </div>
+
+  </TabItem>
+  {/* HTML Code here */}
+  <TabItem label="HTML">
+    ```html
+      {{!-- sm --}}
+      <textarea 
+        name="" 
+        id="" 
+        placeholder="Type here" 
+        class="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md ">
+      </textarea>
+
+      {{!-- md --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type here"
+        class="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 rounded-md" >
+      </textarea>
+
+      {{!-- lg --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type here"
+        class="w-80 h-24 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md">
+      </textarea>
+    ```
+
+  </TabItem>
+  {/* JSX Code here */}
+  <TabItem label="JSX">
+    ```jsx
+    {{!-- sm --}}
+      <textarea 
+        name="" 
+        id="" 
+        placeholder="Type here" 
+        className="w-80 h-14 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md ">
+      </textarea>
+
+      {{!-- md --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type here"
+        className="w-80 h-20 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 rounded-md" >
+      </textarea>
+
+      {{!-- lg --}}
+      <textarea
+        name=""
+        id=""
+        placeholder="Type here"
+        className="w-80 h-24 border border-slate-300 focus:ring-2 focus:ring-slate-600 outline-none px-4 py-2 rounded-md">
+      </textarea>
+    ```
+
+  </TabItem>
 </Tabs>
