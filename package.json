@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --host",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "dev": "node api.js && astro dev --host",
+    "start": "node api.js && astro dev",
+    "build": "node api.js && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
